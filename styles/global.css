@@ -1,7 +1,8 @@
 /* *, *::before, *::after { margin: 0; padding:0; box-sizing: inherit; } */
 html { scroll-behavior: smooth; }
 
-/* Mozarts Ghost */
+/* Mozarts Ghost
+**************************************************************** */
 #mozarts-ghost {
     position: fixed;
     opacity: 1;
@@ -44,10 +45,268 @@ html { scroll-behavior: smooth; }
     100% { color: #00FFFF; }
 }
 
+
+/* Github Link
+**************************************************************** */
 #github-link {
     position: fixed;
     opacity: 1;
     bottom: 0;
     right: 10px;
     padding: 10px;
+}
+
+
+
+
+/* Scroll to top
+**************************************************************** */
+.swt-scroll-top { 
+	color: #333 !important;
+	bottom: 7% !important;
+}
+
+
+
+
+
+/* Google Captcha
+**************************************************************** */
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+    right: auto !important;
+    bottom: 100px !important;
+    z-index: 999 !important;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+}
+
+.grecaptcha-badge:hover {
+    width: 256px !important;
+}
+
+
+/* CookieYes
+**************************************************************** */
+.cky-revisit-bottom-left {
+    left: 1px !important;
+    bottom: 80px !important;
+    transform: scale(0.6); 
+    transform-origin: center;
+}
+
+
+/* DarkMode
+**************************************************************** */
+/* .wp-dark-mode-floating-switch {
+    left: 3px !important;
+    bottom: 60px !important;
+} */
+
+
+
+/* Category: pill
+**************************************************************** */
+.wp-block-post-terms.is-style-swt-post-terms-pill a {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 7px 26px;
+    border-radius: 4px !important;
+}
+
+/* Pattern: Info Box */
+/* Default CSS for larger screens */
+.custom-info-box img {
+  margin-right: 2em;
+}
+
+/* Tablet and mobile-specific CSS */
+@media only screen and (max-width: 1024px) {
+  .custom-info-box img {
+    margin-right: 0;
+  }
+}
+
+
+
+
+/* Hamburger Icon
+**************************************************************** */
+.wp-block-navigation__responsive-container-close, 
+.wp-block-navigation__responsive-container-open {
+    padding: 1px;
+    border: 2px solid #f4f5f6 !important;
+}
+
+.wp-block-navigation__responsive-container-open {
+    border: 0 !important;
+}
+
+
+/* G Translate
+**************************************************************** */
+.gtranslate_wrapper .glink {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #A9A358 !important;
+    margin: 0 5px;
+}
+
+
+/* Form: Search
+**************************************************************** */
+input[type="search"] {
+    font-size: 16px !important;
+}
+
+
+/* No Scroll on iPhone for Search Bar
+**************************************************************** */
+input[type="text"], input[type="search"] {
+    font-size: 16px !important;
+}
+
+
+/* Advance Post > Pagination
+**************************************************************** */
+.apbPagination {
+    margin-top: 3rem !important;
+}
+
+
+/* Contact 7
+**************************************************************** */
+/* General form styles */
+.wpcf7-form {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Input fields styling */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Placeholder styling */
+.wpcf7 input::placeholder,
+.wpcf7 textarea::placeholder {
+    color: #aaa;
+}
+
+/* Submit button styling */
+.wpcf7 input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Error and success message styling */
+.wpcf7-not-valid-tip {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.wpcf7-mail-sent-ok {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.wpcf7-validation-errors {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+.wpcf7-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Focus effect */
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .wpcf7-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .wpcf7 input[type="submit"] {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    .wpcf7 input[type="url"],
+    .wpcf7 input[type="tel"],
+    .wpcf7 textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wpcf7 input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    .wpcf7 input[type="url"],
+    .wpcf7 input[type="tel"],
+    .wpcf7 textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .wpcf7-form {
+        padding: 10px;
+    }
 }
